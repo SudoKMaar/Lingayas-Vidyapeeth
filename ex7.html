@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinking Text</title>
+    <SCRIPT LANGUAGE="JavaScript">
+        colours = new Array("yellow", "blue")
+        index = 0
+        document.write("<center><font size='11' face='jokerman'>Lingayas Vidyapeeth </font></center>");
+        document.write("<center><font size='11' face='algerian'>This Blinking effect is</font></center>");
+        document.write("<center><font size='11' face='algerian'>Created by Abhishek Kumar</font></center>");
+        ref = setInterval("func()", 500)
+
+        function func() {
+            if (index > 1) {
+                index = 0
+                document.fgColor = colours[index]
+                index++
+            } else {
+                document.fgColor = colours[index]
+                index++
+            }
+        }
+    </SCRIPT>
+
+    <body bgcolor=lime>
+</HEAD>
+
+</HTML>

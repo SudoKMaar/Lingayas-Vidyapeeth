@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <SCRIPT LANGUAGE="JavaScript">
+        function calc(ch) {
+            if (ch == "=") {
+                document.form1.text1.value = eval(document.form1.text1.value);
+            } else {
+                if (ch == "C") {
+                    document.form1.text1.value = "";
+                } else {
+                    document.form1.text1.value += ch;
+                }
+            }
+        }
+    </SCRIPT>
+</head>
+
+<body bgcolor="Yellow">
+    <center>
+        <font face=cursive size=8>Calculator using Java Script</font>
+        <p><br>
+            <FORM NAME="calculator">
+                <INPUT TYPE="text" NAME="text1" VALUE="" SIZE=20>
+                <TABLE border=6>
+                    <tr>
+                        <td>
+                            <INPUT TYPE="button" VALUE=" 7 " OnClick="calc('7')">
+                            <td>
+                                <INPUT TYPE="button" VALUE=" 8 " OnClick=" calc('8')">
+                                <td>
+                                    <INPUT TYPE="button" VALUE=" 9 " OnClick=" calc('9')">
+                                    <td>
+                                        <INPUT TYPE="button" VALUE=" * " OnClick=" calc('*')">
+                                        <tr>
+                                            <td>
+                                                <INPUT TYPE="button" VALUE=" 4 " OnClick=" calc('4')">
+                                                <td>
+                                                    <INPUT TYPE="button" VALUE=" 5 " OnClick=" calc('5')">
+                                                    <td>
+                                                        <INPUT TYPE="button" VALUE=" 6 " OnClick=" calc('6')">
+                                                        <td>
+                                                            <INPUT TYPE="button" VALUE=" / " OnClick=" calc('/')">
+                                                            <tr>
+                                                                <td>
+                                                                    <INPUT TYPE="button" VALUE=" 1 " OnClick=" calc('1')">
+                                                                    <td>
+                                                                        <INPUT TYPE="button" VALUE=" 2 " OnClick=" calc('2')">
+                                                                        <td>
+                                                                            <INPUT TYPE="button" VALUE=" 3 " OnClick=" calc('3')">
+                                                                            <td>
+                                                                                <INPUT TYPE="button" VALUE=" - " OnClick=" calc('-')">
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <INPUT TYPE="button" VALUE=" C " OnClick=" calc('C')">
+                                                                                        <td>
+                                                                                            <INPUT TYPE="button" VALUE=" 0 " OnClick=" calc('0')">
+                                                                                            <td>
+                                                                                                <INPUT TYPE="button" VALUE=" = " OnClick=" calc('=')">
+                                                                                                <td>
+                                                                                                    <INPUT TYPE="button" VALUE=" + " OnClick=" calc('+')">
+                </TABLE>
+            </FORM>
+</BODY>
+
+</HTML>

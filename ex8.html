@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Digital Clock </title>
+    <SCRIPT LANGUAGE="JavaScript">
+        function func() {
+            mydate = new Date();
+            h = mydate.getHours();
+            m = mydate.getMinutes();
+            s = mydate.getSeconds();
+            document.F.H.value = h;
+            document.F.M.value = m;
+            document.F.S.value = s;
+        }
+        window.setInterval("func()", 100)
+    </SCRIPT>
+
+    <body bgcolor="Yellow">
+        <font face=cursive size=6>
+            <H1 align="center"> DIGITAL CLOCK </h1>
+        </font>
+        <CENTER>
+            <font face=monospace size=6>
+                <FORM NAME="F">
+
+                    <br>
+                    <h3><b><INPUT TYPE="TEXT" NAME="H" SIZE="4">Hours
+                    <INPUT TYPE="TEXT" NAME="M" SIZE="4">Minutes
+                    <INPUT TYPE="TEXT" NAME="S" SIZE="4">Seconds
+                </h3></b>
+                </FORM>
+            </font>
+        </CENTER>
+</HEAD>
+
+</HTML>
